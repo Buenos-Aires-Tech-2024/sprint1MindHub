@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="estilos_contacto.css">
+</head>
+<body>
+    <header class="header">
+        <img class="logo" src="logo.webp" alt="Logo de active edge sports">
+        <h1 class="texto">Active Edge Sports</h1>
+    </header>
+    <nav class="navegacion">
+        <a href="index.html" class="links-de-nav">Inicio</a>
+        <a href="About.html" class="links-de-nav">Sobre Nosotros</a>
+        <a class="links-de-nav">Productos</a>
+        <a class="links-de-nav">Contacto</a>
+    </nav>
+    <main>
+    <div class="container">
+        <!-- Map Section -->
+        <iframe 
+            class="map" 
+            src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d26282.796023275212!2d-58.5009801281006!3d-34.57002207143806!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses!2sar!4v1745535032802!5m2!1ses!2sar" width="800" height="600" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+
+        <!-- Form Section -->
+        <form action="https://aulamindhub.github.io/dwm_show_data/show_data.html" method="get" target="_blank">
+            <label class="nombre_mail">
+                <span class="Titulos_de_nombre_mail">Nombre y apellido:</span>
+                <input class="nombre_mail" type="text" name="nombre" placeholder="John Doe">
+            </label>
+            <label class="nombre_mail">
+                <span class="Titulos_de_nombre_mail">Email:</span>
+                <input class="nombre_mail" type="email" name="email" placeholder="Ejemplo@gmail.com">
+            </label>
+            <fieldset class="flexbox_categorias">
+                <legend>Categorías de interés</legend>
+                <div class="categories">
+                    <label>Categoria 1:<input type="checkbox" name="categoria" value="Categoria1"></label>
+                    <label>Categoria 2:<input type="checkbox" name="categoria" value="Categoria2"></label>
+                    <label>Categoria 3:<input type="checkbox" name="categoria" value="Categoria3"></label>
+                    <label>Categoria 4:<input type="checkbox" name="categoria" value="Categoria4"></label>
+                    <label>Categoria 5:<input type="checkbox" name="categoria" value="Categoria5"></label>
+                    <label>Categoria 6:<input type="checkbox" name="categoria" value="Categoria6"></label>
+                    <label>Categoria 7:<input type="checkbox" name="categoria" value="Categoria7"></label>
+                    <label>Categoria 8:<input type="checkbox" name="categoria" value="Categoria8"></label>
+                </div>
+            </fieldset>
+            <fieldset>
+                <div class="reset_submit">
+                <legend>Suscribirme al newsletter</legend>
+                <label>Si:<input type="radio" name="newsletter" value="Si"></label>
+                <label>No:<input type="radio" name="newsletter" value="No"></label>
+                </div>
+            </fieldset>
+            <textarea name="message" minlength="10" placeholder="Tu mensaje aqui" maxlength="2000" rows="8" cols="8 "></textarea>
+            <div class="reset_submit">
+                <input class="botones_probando" type="reset" value="Reestablecer">
+                <button class="botones_probando" type="submit">Enviar</button>
+            </div>
+        </form>
+    </div>
+    </main>
+</body>
+</html>

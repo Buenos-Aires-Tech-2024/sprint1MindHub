@@ -4,66 +4,162 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="estilos_index.css">
 </head>
 <body>
-    <header>
-        <div>
-            <img src="logo.webp" height="240"/>
-            <h1>Active Edge Sports</h1> 
-        </div>
+    <header class="header">
+        <img class="logo" src="logo.webp" alt="Logo de Active Edge Sports">
+        <h1 class="texto">Active Edge Sports</h1> 
     </header>
-    <nav>
-        <a>
+    <nav class="navegacion">
+        <a href="index.html" class="links-de-nav">
             Inicio
         </a>
-        <a href="About.html">
+        <a href="About.html" class="links-de-nav">  
             Sobre Nosotros
-        </a href="">
-        <a>
+        </a>
+        <a class="links-de-nav">
             Productos
         </a>
-        <a>
+        <a href="contacto.html" class="links-de-nav">
             Contacto
         </a>
     </nav>
 
     <main>
-        <section>
-            <div>
-            <img src="seccionCalzado.webp" height="240">
-            <h3>Calzado</h3>
-            </div>
-            <article>
-                <img src="zapatillasProFit.jpg" height="80">
-                <p>Zapatillas de Correr ProFit - $89.99</p>
-            </article>
-        </section>
-        
-        <section>
-            <div>
-            <img src="seccionEquipoDeFitness.webp" height="240">
-            <h3>Equipo de fitness</h3>
-            </div>
-            <article>
-                <img src="pesas20Lbs.webp" height="80">
-                <p>Juego de Pesas PowerMax (20 lbs) - $59.99</p>
-            </article>
+        <section class="bienvenida">
+            <h2>Bienvenido a Active Edge Sports</h2>
+            <p>Explora nuestros productos y servicios</p>
         </section>
 
-        <section>
+        <div class="separador"></div>
+        
+    <div class="contenido-principal">
+        <aside class="menu-categorias">
             <div>
-                <img src="seccionDeportesAlAireLibre.jpeg" height="240">
-                <h3>Deportes al aire libre</h3>
+            <h3>Calzado</h3>
+            <ul>
+                <li>Zapatillas para correr</li>
+                <li>Zapatillas de entrenamiento</li>
+                <li>Calzado casual</li>
+            </ul>
             </div>
-            <article>
-                <img src="yogaMat.webp" height="80">
-                <p>Esterilla de Yoga FlexiGrip - $29.99</p>
-            </article>
+            <div>
+                <h3>Equipo de Fitness</h3>
+                <ul>
+                    <li>Equipos de ejercicio</li>
+                    <li>Yoga y pilates</li>
+                </ul>
+             </div>  
+                
+             <div>
+                <h3>Deportes al Aire Libre</h3>
+                <ul>
+                    <li>Senderismo y trekking</li>
+                    <li>Deportes acuáticos y actividades</li>
+                    <li>Equipos de camping</li>
+                    <li>Accesorios para ciclismo</li>
+                 </ul>
+             </div>
+        </aside>
+
+
+<!-- Poner una pseudo-class que destaque cuando el curso hace hover sobre algo-->
+    <div class="contenido-central">
+    
+
+        <div class="nuestros-productos"> Nuestros Productos</div>
+        
+         <div class="contenedor-de-productos">
+                
+        <section class="caja tarjetas">
+            <img src="seccionCalzado.webp" height="240" alt="Display de zapatillas">
+            <h3>Calzado</h3>
+            <img src="zapatillasProFit.jpg" height="80" alt="zapatillas deportivas">
+            <p>Zapatillas de Correr ProFit - $89.99</p>
+            <button class="botones">View info</button>
         </section>
+        
+        <section class="caja tarjetas">
+            <img src="seccionEquipoDeFitness.webp" height="240" alt="display de equipos de gimnasio">
+            <h3>Equipo de fitness</h3>
+            <img src="pesas20Lbs.webp" height="80" alt="mancuernas de gimasio">
+            <p>Juego de Pesas PowerMax (20 lbs) - $59.99</p>
+            <button class="botones">View info</button>
+        </section>
+
+        <section class="caja tarjetas">
+                <img src="seccionDeportesAlAireLibre.jpeg" height="240" alt="personas haciendo deporte al aire libre">
+                <h3>Deportes al aire libre</h3>
+                <img src="yogaMat.webp" height="80" alt="mat de yoga">
+                <p>Esterilla de Yoga FlexiGrip - $29.99</p>
+                <button class="botones">View info</button>
+        </section>
+
+        <section class="caja tarjetas">
+            <img src="seccionCalzado.webp" height="240">
+            <h3>Zapatillas para correr</h3>
+            <img src="nike_air_max.webp" height="80" alt="Zapatillas para correr">
+            <p>Nike Air Max 270 Casual - $79.90</p>
+            <button class="botones">View info</button>
+        </section>
+
+        <section class="caja tarjetas">
+            <img src="seccionDeportesAlAireLibre.jpeg" height="240" alt="personas haciendo deporte al aire libre">
+            <h3>Deportes al aire libre</h3>
+            <img src="under_armor.jpeg" height="80" alt="remera de gimnasio">
+            <p>Under Armour Tech 2.0 T-Shirt - $29.90</p>
+            <button class="botones">View info</button>
+        </section>
+
+        <section class="caja tarjetas">
+            <img src="seccionDeportesAlAireLibre.jpeg" height="240">
+            <h3>Accesorios para ciclismo</h3>
+            <img src="bike_helmet.jpeg" height="80">
+            <p>Bell Overdrive Bike Helmet - $19.90</p>
+            <button class="botones">View info</button>
+        </section>
+        
+        </div>
+
+        <div class="beneficios">
+            <table>
+                <caption>Tabla de beneficios</caption>
+                <tr>
+                    <th rowspan="2">Ventaja</th>
+                    <th colspan="3">Beneficios</th>
+                </tr>
+                <tr>
+                    <th>Calzado</th>
+                    <th>Equipo de Fitness</th>
+                    <th>Deportes al aire libre</th>
+                </tr>
+                <tr>
+                    <td>Calidad</td>
+                    <td>Deseño ergonomico</td>
+                    <td>Materiales superiores</td>
+                    <td>Diseño profesional</td>
+                </tr>
+                <tr>
+                    <td>Precio</td>
+                    <td>Preciom competitivo</td>
+                    <td>Ahorro garantizado</td>
+                    <td>Costo accesible</td>
+                </tr>
+                <tr>
+                    <td>Garantia</td>
+                    <td>1 año</td>
+                    <td>5 años</td>
+                    <td>3 años</td>
+                </tr>
+            </table>
+    </div>
+    </div> 
+    </div>
 
     </main>
 
-    <footer>
+    <footer> <!-- si uso html, body {height: 100% etnonces desaparece el header}, no se como arregarlo-->
         <p>© Joaquin Rodriguez. Todos los derechos reservados</p>
     </footer>
 </body>
